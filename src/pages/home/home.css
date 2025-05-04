@@ -1,0 +1,103 @@
+/* Home Hero Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?t=st=1746256304~exp=1746259904~hmac=8a31c013aac2f777c32c8a38d8d550549564021caf9c401cafb76bc4137e388a&w=1380);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: black;
+}
+
+.home-content {
+  transform: translateY(-80px); /* Move content slightly upward */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85); /* Light background for readability */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.home-content h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.home-content button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color:#06202B;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.home-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.featured-courses h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color:#06202B;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.explore-btn:hover {
+  background-color: #06202B;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 30px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+
+  .course-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
