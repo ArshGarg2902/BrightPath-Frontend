@@ -10,7 +10,6 @@ import { CourseData } from "../../context/CourseContext";
 const CourseCard = ({ course }) => {
   const navigate = useNavigate();
   const { user, isAuth } = UserData();
-
   const { fetchCourses } = CourseData();
 
   const deleteHandler = async (id) => {
@@ -29,13 +28,15 @@ const CourseCard = ({ course }) => {
       }
     }
   };
+
   return (
     <div className="course-card">
       <img src={`${server}/${course.image}`} alt="" className="course-image" />
       <h3>{course.title}</h3>
-      <p>Instructor- {course.createdBy}</p>
-      <p>Duration- {course.duration} weeks</p>
-      <p>Price- ₹{course.price}</p>
+      <p>Instructor - {course.createdBy}</p>
+      <p>Duration - {course.duration} weeks</p>
+      <p>Price - {course.price === 0 ? "Free Course" : `₹${course.price}`}</p>
+
       {isAuth ? (
         <>
           {user && user.role !== "admin" ? (

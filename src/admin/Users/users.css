@@ -1,8 +1,86 @@
+/* Wrapper to center content */
+.users-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+
+/* Main users box */
 .users {
-    width: 350px;
-    overflow-x: auto;
-    white-space: nowrap;
-    margin: 20px auto;
-    min-height: 80vh;
-    border: solid gray 1px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-height: 80vh;
+  overflow-x: auto;
+}
+
+/* Title styling */
+.users h1 {
+  text-align: center;
+  color: #8a4baf;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* Table base styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 600px;
+}
+
+/* Table head */
+thead {
+  background-color: #8a4baf;
+  color: white;
+}
+
+/* Table cells */
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* Alternate row color */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Button styling */
+.common-btn {
+  background-color: #8a4baf;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.common-btn:hover {
+  background-color: #6f3d91;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .users {
+    padding: 15px;
   }
+
+  th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .users h1 {
+    font-size: 24px;
+  }
+}

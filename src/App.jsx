@@ -42,7 +42,7 @@ const App = () => {
             <Route path="/login" element={isAuth ? <Home /> : <Login />} />
             <Route path="/register" element={isAuth ? <Home /> : <Register />} />
             <Route path="/verify" element={isAuth ? <Home /> : <Verify />} />
-            <Route path="forgot" element={isAuth ? <Home /> : <ForgotPassword />} />
+            <Route path="/forgot" element={isAuth ? <Home /> : <ForgotPassword />} />
             <Route path="/reset-password/:token" element={isAuth ? <Home /> : <ResetPassword />} />
             
             {/* Protected Routes */}
