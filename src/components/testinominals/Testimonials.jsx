@@ -5,59 +5,62 @@ const Testimonials = () => {
   const testimonialsData = [
     {
       id: 1,
-      name: "John Doe",
+      name: "Jagdish kumar",
       position: "Student",
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
       image:
-        "https://th.bing.com/th?q=Current+Bachelor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247",
+        "https://i.pinimg.com/1200x/a3/7b/e5/a37be5b9709175f1527761157463ec38.jpg",
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Rahul Sharma",
       position: "Student",
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
       image:
-        "https://th.bing.com/th/id/OIP.GKAiW3oc2TWXVEeZAzrWOAHaJF?w=135&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        
+        "https://i.pinimg.com/originals/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg",
     },
     {
       id: 3,
-      name: "John Doe",
+      name: "Avinash Gupta",
       position: "Student",
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
       image:
-        "https://th.bing.com/th?q=Current+Bachelor&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247",
+        "https://i.pinimg.com/originals/c3/33/27/c333273fcfc3198e93df380c0cfc0437.jpg",
     },
     {
       id: 4,
-      name: "Jane Smith",
+      name: "Sneha bansal",
       position: "Student",
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
       image:
-        "https://th.bing.com/th/id/OIP.GKAiW3oc2TWXVEeZAzrWOAHaJF?w=135&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+     
+        "https://i.pinimg.com/736x/56/7a/d2/567ad26c22b991cb9f52b999f70b855d.jpg",
     },
   ];
   return (
     <section className="testimonials">
-      <h2>What our students say</h2>
-      <div className="testmonials-cards">
-        {testimonialsData.map((e) => (
-          <div className="testimonial-card" key={e.id}>
-            <div className="student-image">
-              <img src={e.image} alt="" />
-            </div>
-            <p className="message">{e.message}</p>
-            <div className="info">
-              <p className="name">{e.name}</p>
-              <p className="position">{e.position}</p>
-            </div>
-          </div>
-        ))}
+  <h2>What our students say</h2>
+  <div className="testimonials-cards">
+    {testimonialsData.map((e) => (
+      <div className="testimonial-card" key={e.id}>
+        <div className="student-image">
+          <img src={e.image} alt={`${e.name}'s profile`} />
+        </div>
+        <p className="message">{e.message}</p>
+        <div className="info">
+          <p className="name">{e.name}</p>
+          <p className="position">{e.position}</p>
+        </div>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
   );
 };
 
